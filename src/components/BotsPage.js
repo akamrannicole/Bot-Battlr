@@ -6,7 +6,7 @@ function BotsPage() {
   const [bots, setBots] = useState([]);
 
   useEffect(() => {
-    fetch("https://bot-battlr-jyxi.onrender.com/bots")
+    fetch("http://localhost:3000/bots")
      .then(response => response.json())
      .then(data => {
         setBots(data);
